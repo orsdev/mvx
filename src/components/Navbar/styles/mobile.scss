@@ -1,0 +1,42 @@
+.mobile {
+  @apply block 2md:hidden  rounded-[18px] py-5 px-10  mx-auto w-[85%] fixed top-5 left-0 right-0 z-50;
+  background: rgba(255, 255, 255, 0.8);
+
+  &__hamburger {
+    &:active {
+      transition: all 0.3s;
+      transform: scale(0.9);
+    }
+  }
+
+  &__close {
+    &:active {
+      transition: all 0.3s;
+      transform: scale(0.9);
+    }
+  }
+
+  &__logo {
+    @apply w-[60px] xs:w-[70px] h-9;
+
+    &--img {
+      @apply object-contain w-full h-full;
+    }
+  }
+
+  &__nav {
+    @apply fixed top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden items-center rounded bg-white m-2 py-3 px-10 w-full shadow-md h-full max-h-[450px];
+  }
+
+  &__nav__links {
+    @apply md:flex-col md:min-w-full flex flex-col list-none mt-6;
+  }
+
+  &__button {
+    @apply text-sm transition ease-in-out text-secondary hover:text-orange-400 block;
+
+    &--signup {
+      @apply transition ease-in-out bg-secondary hover:bg-orange-400 hover:text-white text-white rounded-md px-5 py-3 font-montLight w-full base:w-auto;
+    }
+  }
+}

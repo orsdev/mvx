@@ -1,0 +1,28 @@
+.desktop {
+  @apply hidden 2md:flex rounded-[18px] py-5 px-10 items-center mx-auto w-[85%] fixed top-5 left-0 right-0 z-50;
+  background: rgba(255, 255, 255, 0.8);
+
+  &__logo {
+    @apply w-[70px] h-9;
+
+    &--img {
+      @apply object-contain w-full h-full;
+    }
+  }
+
+  &__nav {
+    @apply flex list-none flex-1 justify-center;
+  }
+
+  &__links {
+    @apply text-xs pr-9 last:pr-0;
+  }
+
+  &__button {
+    @apply text-sm;
+
+    &--signup {
+      @apply transition ease-in-out bg-secondary hover:bg-orange-400  text-white rounded-md px-5 py-3 font-montLight;
+    }
+  }
+}
