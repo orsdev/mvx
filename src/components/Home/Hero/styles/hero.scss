@@ -1,5 +1,5 @@
 .home__hero {
-  @apply px-6 xs:px-7 base:px-10 md:px-[90px] bg-cover bg-no-repeat py-5 pt-[180px];
+  @apply px-6 xs:px-7 base:px-10 md:px-[90px] bg-cover bg-no-repeat pt-[180px] py-5;
   background-image: url(~/public/assets/images/hero-bg.png);
   background-position: top right;
 }

@@ -25,11 +25,11 @@
   }
 
   &__nav {
-    @apply fixed top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden items-center rounded bg-white m-2 py-3 px-10 w-full shadow-md h-full max-h-[450px];
+    @apply fixed top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden items-center rounded bg-white m-2 py-3 px-10 w-full shadow-md max-h-[450px] h-full;
   }
 
   &__nav__links {
-    @apply md:flex-col md:min-w-full flex flex-col list-none mt-6;
+    @apply flex flex-col md:min-w-full list-none mt-6;
   }
 
   &__button {

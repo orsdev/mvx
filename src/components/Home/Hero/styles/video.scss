@@ -14,7 +14,7 @@
     }
 
     &--icon {
-      @apply scale-125 base:scale-[2];
+      @apply scale-125 base:scale-[2] text-white;
     }
   }
 }
