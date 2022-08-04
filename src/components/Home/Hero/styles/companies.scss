@@ -1,0 +1,9 @@
+.companies {
+  &__stat {
+    @apply grid xxs:grid-cols-2 gap-5 md:flex justify-between lg:justify-start flex-wrap 2xl:flex-nowrap mt-6;
+
+    & > :not(:last-child) {
+      @apply md:mr-5 md:pb-4;
+    }
+  }
+}

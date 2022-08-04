@@ -2,40 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "medium";
+  src: local("medium"),
+    url(../../public/assets/fonts/monterrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "semibold";
+  src: local("semibold"),
+    url(../../public/assets/fonts/monterrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "light";
+  src: local("light"),
+    url(../../public/assets/fonts/monterrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "catalina";
+  src: local("catalina"),
+    url(../../public/assets/fonts/catalina/CatalinaTrue.ttf);
+}
+
 @layer base {
   html {
-    scroll-behavior: "smooth";
-    box-sizing: border-box;
-  }
-
-  body,
-  html {
-    font-family: "Inter", sans-serif;
+    @apply scroll-smooth box-border;
   }
 
   body {
-    overflow-y: scroll;
-    background: #f5f6fa;
-  }
-
-  button,
-  i,
-  a,
-  ul,
-  li {
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  button,
-  span,
-  a {
-    color: inherit;
+    @apply text-dark bg-white font-montMedium;
   }
 }
